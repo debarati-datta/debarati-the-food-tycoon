@@ -6,6 +6,19 @@
         <form class="col s12" method="POST" action="">
             <div class="row">
                 <div class="input-field col s12">
+                    <i class="fas fa-folder-open prefix light-blue-text text-darken-4"></i>
+                    <select>
+                        <option value="" disabled selected>Select a catagory</option>
+                        {% for catagory in catagories %}
+                            <option value="{{ catagory.catagory_name }}"> {{ catagory.catagory_name }}</option>
+                        {% endfor %}
+                        
+                    </select>
+                    <label>Recipe Catagory</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
                     <i class="fas fa-pencil-alt prefix light-blue-text text-darken-4"></i>
                     <input id="recipe_name" name="recipe_name" minlength="5" maxlength="60" type="text" class="validate"
                         required>
