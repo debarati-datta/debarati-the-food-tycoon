@@ -3,20 +3,22 @@
 
     <h3 class="light-blue-text text-darken-4 center-align">Add Recipe</h3>
     <div class="row card-panel blue lighten-4">
-        <form class="col s12" method="POST" action="">
+        <form class="col s12" method="POST" action="{{ url_for('add_recipe') }}">
+            <!---catagory selection-->
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-folder-open prefix light-blue-text text-darken-4"></i>
-                    <select>
+                    <select id="catagory_name" name="catagory_name" class="validate" required>
                         <option value="" disabled selected>Select a catagory</option>
                         {% for catagory in catagories %}
                             <option value="{{ catagory.catagory_name }}"> {{ catagory.catagory_name }}</option>
                         {% endfor %}
                         
                     </select>
-                    <label>Recipe Catagory</label>
+                    <label for="catagory_name">Recipe Catagory</label>
                 </div>
             </div>
+            <!---recipe name-->
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-pencil-alt prefix light-blue-text text-darken-4"></i>
@@ -25,6 +27,7 @@
                     <label for="recipe_name">Recipe Name</label>
                 </div>
             </div>
+            <!---ingredients-->
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-pepper-hot prefix light-blue-text text-darken-4"></i>
@@ -32,11 +35,18 @@
                     <label for="ingredients">Recipe Ingredients</label>
                 </div>
             </div>
+            <!---recipe description-->
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
                     <textarea id="recipe_description" name="recipe_description" minlength="5" maxlength="500" class="materialize-textarea validate" required></textarea>
                     <label for="recipe_description">Recipe Description</label>
+                </div>
+            </div>
+            <!---submit button-->
+            <div class="row">
+                <div class="col s12 center-align">
+                    <button type="submit" class="btn-large light-blue darken-1 text-shadow">Add Recipe<i class="fas fa-plus-square right"></i></button>
                 </div>
             </div>
         </form>
