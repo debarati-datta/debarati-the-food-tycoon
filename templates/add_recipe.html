@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 {% block content %}
 
+<div class="background-image">
+    <div class="logo"><img src="static/images/food_banner_22.jpg" alt="logo" style="width:100%"></div>
+</div>
+
     <h3 class="light-blue-text text-darken-4 center-align">Add Recipe</h3>
     <div class="row card-panel blue lighten-4">
         <form class="col s12" method="POST" action="{{ url_for('add_recipe') }}">
