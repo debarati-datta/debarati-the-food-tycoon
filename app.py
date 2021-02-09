@@ -81,7 +81,7 @@ def profile(username):
     username = mongo.db.users.find_one({ "username": session["user"]})["username"]
 
     if session['user']:
-        return render_template("profile.html", username=username )
+        return render_template("profile.html", username=username)
 
     return redirect(url_for("login"))
    
@@ -110,6 +110,13 @@ def add_recipe():
 
     catagories = mongo.db.catagories.find().sort("catagory_name", 1)
     return render_template("add_recipe.html", catagories=catagories)
+
+
+@app.route("/edit_recipe/<recipe_id>", methods=[ "GET", "POST"])
+def edit_recipe(recipe_id):
+    recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
+    catagories = mongo.db.catagories.find().sort("catagory_name", 1)
+    return render_template("edit_recipe.html", recipe=recipe, catagories=catagories)
 
 
 if __name__ == "__main__":
