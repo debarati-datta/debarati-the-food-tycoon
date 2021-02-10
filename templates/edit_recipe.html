@@ -10,14 +10,14 @@
             <div class="input-field col s12">
                 <i class="fas fa-folder-open prefix light-blue-text text-darken-4"></i>
                 <select id="catagory_name" name="catagory_name" class="validate" required>
-                    <option value="" disabled selected>Select a catagory</option>
+                    <option value="" disabled>Select a catagory
+                    </option>
                     {% for catagory in catagories %}
-                        {% if catagory.catagory_name == recipe.catagory_name %}
-                            <option value="{{ catagory.catagory_name }}" selected>
-                                {{ catagory.catagory_name }}
-                            </option>
-                        {% else %}
+                        {% if catagory.catagory_name != recipe.catagory_name %}
                             <option value="{{ catagory.catagory_name }}">{{ catagory.catagory_name }}</option>
+                        {% else %}
+                            <option value="{{ catagory.catagory_name }}" selected>
+                            {{- catagory.catagory_name -}}</option>
                         {% endif %}
                     {% endfor %}
                 </select>
@@ -60,7 +60,7 @@
                 <a href="{{ url_for('get_recipes') }}" class="btn-large red text-shadow">
                     Cancel <i class="fas fa-times-circle right"></i>
                 </a>
-                <button type="submit" class="btn-large light-blue darken-1 text-shadow">Edit Recipe<i class="fas fa-edit right"></i></button>
+                <button type="submit" class="btn-large light-blue darken-1 text-shadow">Edit<i class="fas fa-edit right"></i></button>
             </div>
         </div>
     </form>
