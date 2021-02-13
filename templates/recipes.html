@@ -10,11 +10,32 @@
     <div class="row">
         
         {% for recipe in recipes %}
-        <div class="col s3 m3">
+        <div class="col s12 m12">
             {% if session.user|lower == recipe.created_by|lower %}
-            <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="btn-small red accent-4">Delete</a>
+            
             <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="btn-small blue-grey accent-4">Edit</a>
-            {% endif %}
+
+            <button onclick="document.getElementById('recipe_id').style.display='block'" class="btn-small red accent-4">Delete</button>
+                        
+            <div id="recipe_id" class="modal">
+                <span onclick="document.getElementById('recipe_id').style.display='none'" class="close"
+                    title="Close Modal">×</span>
+                <form class="modal-content" action="/action_page.php">
+                    <div class="container">
+                        <p>Are you sure you want to delete this recipe?</p>
+                        <div class="clearfix">
+                            <button type="button" onclick="document.getElementById('recipe_id').style.display='none'" class="cancelbtn">Cancel
+                            </button>
+                
+                            <button type="button" onclick="document.getElementById('recipe_id').style.display='none'" class="deletebtn">
+                            <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}">OK</a>
+                            </button>   
+                        </div>
+                    </div>
+                </form>
+                        
+                {% endif %}
+            </div>
         </div>
         <div class="col s12 m12">
             <div class="card blue-grey darken-1">
@@ -32,6 +53,18 @@
         </div>
         
         {% endfor %}
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById('recipe_id');
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
         
         
         {% endblock %}

@@ -105,7 +105,7 @@ def add_recipe():
             "created_by": session["user"]
         }
         mongo.db.recipes.insert_one(recipe)
-        flash("Task Succesfully Added")
+        flash("Recipe Succesfully Added")
         return redirect(url_for("get_recipes"))
 
     catagories = mongo.db.catagories.find().sort("catagory_name", 1)
@@ -135,7 +135,7 @@ def edit_recipe(recipe_id):
 @app.route("/delete_recipe/<recipe_id>")
 def delete_recipe(recipe_id):
     mongo.db.recipes.remove({"_id": ObjectId(recipe_id)})
-    flash("Task Successfully Deleted")
+    flash("Recipe Successfully Deleted")
     return redirect(url_for("get_recipes"))
 
 

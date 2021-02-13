@@ -5,6 +5,15 @@
 $(document).ready(function () {
     $(".sidenav").sidenav({edge: "right"});
     $('select').formSelect();
+    // Get the modal
+    var modal = document.getElementById('recipe_id');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
 
 
     validateMaterializeSelect();
