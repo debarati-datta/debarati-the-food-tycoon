@@ -78,7 +78,7 @@ def login():
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
     # grab the session user's username from db
-    username = mongo.db.users.find_one({ "username": session["user"]})["username"]
+    username = mongo.db.users.find_one({"username": session["user"]})["username"]
 
     if session['user']:
         return render_template("profile.html", username=username)
@@ -138,6 +138,12 @@ def delete_recipe(recipe_id):
     flash("Recipe Successfully Deleted")
     return redirect(url_for("get_recipes"))
 
+
+@app.route("/get_catagories")
+def get_catagories():
+    catagories = list(mongo.db.catagories.find().sort("catagory_name", 1))
+    return render_template("catagories.html", catagories=catagories)
+   
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),

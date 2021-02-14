@@ -6,6 +6,10 @@
     margin-top: 2px;
 }
 
+nav .brand-logo{
+    font-size: 1.7rem;
+}
+
 .flashes h4{
     line-height: 2;
 }
