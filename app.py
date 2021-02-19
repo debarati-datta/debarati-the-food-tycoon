@@ -143,7 +143,20 @@ def delete_recipe(recipe_id):
 def get_catagories():
     catagories = list(mongo.db.catagories.find().sort("catagory_name", 1))
     return render_template("catagories.html", catagories=catagories)
-   
+
+
+@app.route("/add_catagory", methods= ["GET", "POST"])
+def add_catagory():
+    if request.method == "POST":
+        catagory = {
+            "catagory_name": request.form.get("catagory_name")
+        }
+        mongo.db.catagories.insert_one(catagory)
+        flash("New Catagory successfully added")
+        return redirect(url_for("get_catagories"))
+
+    return render_template("add_catagory.html")
+    
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
