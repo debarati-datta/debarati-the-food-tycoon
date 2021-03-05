@@ -53,6 +53,14 @@
                 <label for="recipe_description">Recipe Description</label>
             </div>
         </div>
+        <!---recipe video-->
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-film prefix light-blue-text text-darken-4"></i>
+                    <textarea id="video" name="video" minlength="5" maxlength="80" class="materialize-textarea validate" required>{{ recipe.video }}</textarea>
+                    <label for="video">Recipe Video</label>
+                </div>
+            </div>
         <!---submit button-->
         <div class="row">
             <div class="col s12 center-align">
