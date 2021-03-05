@@ -1,4 +1,4 @@
-<h1 align="center">Debarati - The Food Tycoon</h1>
+<h1 align="center">Debarati-The Food Tycoon</h1>
 
 [View the live project here.](https://debarati-datta.github.io/debarati-the-food-tycoon/)
 
