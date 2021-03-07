@@ -1,6 +1,6 @@
 <h1 align="center">Debarati-The Food Tycoon</h1>
 
-[View the live project here.](https://debarati-datta.github.io/debarati-the-food-tycoon/)
+[View the live project here.](https://debarati-datta.github.io/debarati-the-food-tycoon/.)
 
 **This is the website for a new package holiday coampany that offers just one package right now to test markets. It is a package tour of 6 popular destinations in central India covered in 6 days.**
 
