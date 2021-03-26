@@ -1,12 +1,12 @@
 <h1 align="center">Debarati-The Food Tycoon</h1>
 
-[View the live project here.](https://debarati-datta.github.io/debarati-the-food-tycoon/.)
+[View the live project here.](https://debarati-the-food-tycoon.herokuapp.com/)
 
-**This is the website for a new package holiday coampany that offers just one package right now to test markets. It is a package tour of 6 popular destinations in central India covered in 6 days.**
+**This is the website for a recipe collection of basic indian regional favourites. Anyone can become a user and add to the collection.**
 
-## Madhya Pradesh - The heart of India - Introduction
+## Debarati - The Food Tycoon - Introduction
 
-### The idea stems from the overall need for people to travel and explore new places. It also recognises that people want the logistics to be taken care of completely so they can just relax and enjoy their break. Hence the package that takes care of food, transport and stay and the visits are neatly scheduled. It is targetted at domestic travellers although some tweaking can make it relevant for international travellers too.
+### The idea stems from looking at the the popularity of indian curries and creating a platform for people to add their own recipes. Many dishes with the same name and basic ingedients are cooked in slightly different ways in different parts of India and in order to accomodates this variety, the website has catagories representing different states of the country. 
 
 ## User Experience (UX)
 
@@ -14,17 +14,16 @@
 
 - ### User 1 : I want to understand in one quick glace the purpose of the site
 
- 1. The callout section clearly spells out the purpose of the site.![image](https://user-images.githubusercontent.com/66360068/97140595-df8a3300-1754-11eb-8abc-74648a35789c.png)
- 2. Also the very first paragraph on the home page describes the purpose of the website. ![image](https://user-images.githubusercontent.com/66360068/97140688-15c7b280-1755-11eb-9974-5e83e32a919d.png)
- 2. The automatic slideshow tells a picture story while generating interest to know more about the locations.
+ 1. The callout section clearly spells out the purpose of the site.![image](https://user-images.githubusercontent.com/66360068/112591232-f912d200-8dfb-11eb-93b9-f4f93678fe7e.png)
+ 2. Also the very first paragraph on the home page describes the purpose of the website. ![image](https://user-images.githubusercontent.com/66360068/112591385-2fe8e800-8dfc-11eb-8670-05f40c6e6021.png)
+
 
 - ### User 2 : I want to navigate with ease and find thing easily
 
  1. The user is greeted with a clean and easily readable navigation bar that allows you to go to the page of your choice. 
- 2. The most relevant information is immediately available with the 'Destinations', 'Stay' and 'Food' sections on the home page.
- ![image](https://user-images.githubusercontent.com/66360068/97141127-09902500-1756-11eb-9bb1-2558b6710b3e.png)
- ![image](https://user-images.githubusercontent.com/66360068/96184176-ff894d80-0f2f-11eb-9738-2d016655514c.png)
- ![image](https://user-images.githubusercontent.com/66360068/96184213-1039c380-0f30-11eb-98ea-203b39f89ed8.png)
+ 2. The most relevant information is immediately available with the 'Recipes' and 'New Recipe' sections on the home page.
+ ![image](https://user-images.githubusercontent.com/66360068/112591937-05e3f580-8dfd-11eb-9d28-4cfa342e0fb6.png)
+![image](https://user-images.githubusercontent.com/66360068/112591989-214f0080-8dfd-11eb-9032-15696781ef1c.png)
  
  - ### User 3 : I want to see my destinations on the map
 

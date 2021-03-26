@@ -5,6 +5,10 @@
     <div class="background-image">
     <div class="logo"><img src="static/images/food_banner_22.jpg" alt="logo" style="width:100%"></div>
     </div>
+    <h4>
+        This a platform for sharing the most common indian household recipes, eaten on an everyday basis in different parts of the country. The website currently offers 30 recipes of various indian curries from 6 different states of India and allows users to add new recipes to the platform. The recipes are displayed with the user's initials and allows amends. 
+    </h4>
+
     <h3 class="light-blue-text text-darken-4 center-align">All Recipes</h3>
 
     <div class="row card-panel grey lighten-5">
@@ -64,7 +68,7 @@
                     <div class="card-content">
                         <strong>{{ recipe.ingredients }}</strong>
                         <p>{{ recipe.recipe_description }}</p>
-                        <p>Watch it here : <a href="#">{{ recipe.video }}</a>
+                        <p>Watch it here : <a href="url_for('get_video', recipe_id=recipe._id)" target="_blank">{{ recipe.video }}</a>
                         </p>
                         <p><em>by: {{ recipe.created_by }}</em></p>
                     </div>

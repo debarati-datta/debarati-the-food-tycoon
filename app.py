@@ -90,7 +90,7 @@ def profile(username):
         return render_template("profile.html", username=username)
 
     return redirect(url_for("login"))
-   
+    
 
 @app.route("/logout")
 def logout():
@@ -117,6 +117,13 @@ def add_recipe():
 
     catagories = mongo.db.catagories.find().sort("catagory_name", 1)
     return render_template("add_recipe.html", catagories=catagories)
+
+
+@app.route("/get_video")
+def get_video():
+    mongo.db.recipes.video.get({"_id": ObjectId(recipe_id)})
+    return video
+
 
 
 @app.route("/edit_recipe/<recipe_id>", methods=["GET", "POST"])
@@ -180,12 +187,12 @@ def edit_catagory(catagory_id):
     return render_template("edit_catagory.html", catagory=catagory)
 
 
+
 @app.route("/delete_catagory/<catagory_id>")
 def delete_catagory(catagory_id):
     mongo.db.catagories.remove({"_id": ObjectId(catagory_id)})
     flash("Catagory Successfully Deleted")
     return redirect(url_for("get_catagories"))
-
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
