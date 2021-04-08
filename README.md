@@ -25,22 +25,23 @@
  ![image](https://user-images.githubusercontent.com/66360068/112591937-05e3f580-8dfd-11eb-9d28-4cfa342e0fb6.png)
 ![image](https://user-images.githubusercontent.com/66360068/112591989-214f0080-8dfd-11eb-9032-15696781ef1c.png)
  
- - ### User 3 : I want to see my destinations on the map
+ - ### User 3 : I want to add my own recipes and have them sit in the database with my name on it
 
-1. The navigation is simple and the map page shows the destinations.
-2. The previously marked destinations on the map page displays more information and a wikipedia link when clicked to give the user an initiation on a mental plan.
-![image](https://user-images.githubusercontent.com/66360068/97309769-5bba6e80-185a-11eb-9754-61fa09c866cd.png)
+1. The add recipe tab opens up a form that takes in your input in a certain format. 
+2. Upon submission, the recipe gets stored in the database with your initials displaying. It also allows you to amend and delete your own recipe when you log in with the same credentials as you used while creating the recipe.
+![image](https://user-images.githubusercontent.com/66360068/113972396-785bc900-9832-11eb-8a9e-dc73ecb43f8e.png)
 
 
-- ### User 4 : I want a detailed itinerary which I can use to hold the organisers accountable for any mismanagement
+- ### User 4 : I want to add my own recipe as a video
 
-1. The 'itinerary' page allows the user to request an itinerary via email. ![image](https://user-images.githubusercontent.com/66360068/97141782-4f99b880-1757-11eb-9770-e22140c3383d.png)
-2. The itinerary takes into account the dates of visit and the number of visitors to create a detailed plan with pricing, payment method etc.
+1. The add recipe section allows you to add a video link. This can be your own video or something available on youtube. 
+![image](https://user-images.githubusercontent.com/66360068/113972507-9fb29600-9832-11eb-891c-ecb7ceac2ccf.png)
+
 
 
 ### Site owner goals
 
-### Goal 1 : To offer a visually appealing page to get people interested in the package tour
+### Goal 1 : To offer a visually appealing page to get people interested in the recipes
 
  1. The Home section presents a beautiful slideshow of six pictures for the six most popular destinations of Madhya Pradesh.
  2. The Home page also presents enticing pictures of the centrally loacted hotel and the food making the idea of picking this holiday stronger in user's mind.
