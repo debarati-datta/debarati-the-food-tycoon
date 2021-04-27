@@ -6,8 +6,6 @@ from werkzeug.security import generate_password_hash, check_password_hash
 if os.path.exists("env.py"):
     import env
 
-from pyyoutube import Api
-api = Api(api_key='AIzaSyDBhdyqUMRYGu49Jnf90vDfJz-qTsKM6Kc')
 
 app = Flask(__name__)
 
@@ -141,11 +139,6 @@ def edit_recipe(recipe_id):
     recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
     catagories = mongo.db.catagories.find().sort("catagory_name", 1)
     return render_template("edit_recipe.html", recipe=recipe, catagories=catagories)
-
-@app.route("/play_video/<recipe_id>")
-def play_video(recipe_id):
-    mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
-    return play_video
 
 
 
