@@ -55,17 +55,19 @@
 
 ## Features
 
-1. The holiday package is all inclusive and provides opportunity to add more destinations within a given radius through 
-    research, details of which are made available when requested an itinerary.
+1. The website feature of adding, editing and deleting your own recipes makes it easy for the user to own the idea and keep coming back to it.
 
-2. The google map showing destinations and hotel gets the plan to crystallise in the user's mind.
+2. The feature of adding a video link to the recipe allows users to create their very own video clip and using it for their recipe via youtube
 
 
 ## New Features to be implemented in future
 
-A booking/payment page that shows dates availability so a booking can be made straightaway by paying up. Terms and conditions page to be 
-attached to it showing cancellation and refund policies. Also adding more destinations and giving the user option to build his own tour 
-package.
+Ideally, I would like to add quite a few features to it namely :
+
+1. The option to like/love others recipes and add comments for each recipe. that will truly make it a very interactive website which members would love.
+
+2. The option to add more info about each member so the users can connect with other users more on a one to one basis
+
 
 ## Technologies Used
 
@@ -74,6 +76,7 @@ package.
 -   [HTML5](https://en.wikipedia.org/wiki/HTML5)
 -   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
 -   [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+-   [Python3](https://en.wikipedia.org/wiki/Python_(programming_language))
 
 ### Wireframes
 
