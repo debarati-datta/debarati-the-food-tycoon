@@ -43,18 +43,14 @@
 
 ### Goal 1 : To offer a visually appealing page to get people interested in the recipes
 
- 1. The Home section presents a beautiful slideshow of six pictures for the six most popular destinations of Madhya Pradesh.
- 2. The Home page also presents enticing pictures of the centrally loacted hotel and the food making the idea of picking this holiday stronger in user's mind.
+ 1. The home page offers a beautiful banner with indian spices displayed
+ 2. The home page also shows a lot of recipes with a search function at the top which will only get better with time and more and more people contributing recipes.
  
- ### Goal 2 : To offer some interactive elements so the user stays longer on the site that results in a booking
+ ### Goal 2 : To offer some interactive elements so the user stays longer on the site that results in adding more recipes to the page
 
-1. The map offers interactivity and the user can alter the way the map displays information by clicking on the markers.
-2. Also the user can enter some of his details to request a detailed itinerary.
+1. The "Add Recipe" page allows people to add their own recipes and upon submitting also flashes a "success" message
+2. The "Edit" button on the home page allows users to later add or delete their own content what they previously entered which makes the site quite interactive.
 
-### Goal 3 : To eventually make this as an offering on the major [state tourism website](http://www.mptourism.com/)
-
-1. The state encourages smaller entrepreneurs to present their small sized, specific offering through the main state tourism website 
-2. It's an ideal marriage as user is drawn to the large platform but also wants to enjoy the dedicated efforts of smaller teams
 
 
 ## Features
