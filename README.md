@@ -81,36 +81,32 @@ Ideally, I would like to add quite a few features to it namely :
 ### Wireframes
 
 1. The home page for desktop
- - [wireframe original](https://user-images.githubusercontent.com/66360068/96183658-17140680-0f2f-11eb-91c1-88f2238712fd.png)
- - [wireframe revised](https://user-images.githubusercontent.com/66360068/97147613-ac9a6c00-1761-11eb-9507-c0b07527a1df.png)
-2. The map page for mobile 
- - [wireframe original](https://user-images.githubusercontent.com/66360068/96183827-6ce8ae80-0f2f-11eb-99c4-da1590cbc30f.png)
- - [wireframe revised](https://user-images.githubusercontent.com/66360068/97147511-8aa0e980-1761-11eb-8028-9befba654432.png)
+ - [wireframe for home page](https://user-images.githubusercontent.com/66360068/116749462-e3935800-a9f8-11eb-8a2e-ba18594f7f58.png)
+ 
+2. The manage catagories page
+ - [wireframe for manage catagories page](https://user-images.githubusercontent.com/66360068/116749770-56043800-a9f9-11eb-89a8-741600b58e05.png)
+
 
 ### Frameworks, Libraries, Tutorials & Programs Used
 
-1. [Bootstrap 4.4.1:](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
-    - Bootstrap was used to assist with the responsiveness and styling of the website.
+1. [Materialize](https://materializecss.com/getting-started.html)
+    - Materialise is used to assist with the responsiveness and styling of the website.
 1. [Hover.css:](https://ianlunn.github.io/Hover/)
     - Hover.css was used on the Social Media icons in the footer to add the float transition while being hovered over.
-1. [Google Fonts:](https://fonts.google.com/)
-    - Google fonts were used to import the 'Roboto' and 'Exo' fonts into the style.css file which is used on all pages throughout the project.
-1. [Font Awesome:](https://fontawesome.com/)
-    - Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
-1. [jQuery:](https://jquery.com/)
+1. 1. [jQuery:](https://jquery.com/)
     - jQuery came with Bootstrap to make the navbar responsive but was also used for the smooth scroll function in JavaScript.
 1. [Git](https://git-scm.com/)
     - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 1. [GitHub:](https://github.com/)
     - GitHub is used to store the projects code after being pushed from Git.
 1. [youtube:](https://www.youtube.com/)
-    -youtube tutorials are used to understand and adopt the google map markers and infowindows
+    -youtube videos of various recipes have been added by users
 1. [w3schools:](https://www.w3schools.com/)
     -w3school tutorial are used to understand and adopt the slideshow and accordion principle and working
 1. [stack-overflow:](https://stackoverflow.com/)
     -Stack Overflow is used to get answers to various whys and hows
-1. [Wikipedia](https://www.wikipedia.org/)
-    -All the content on destinations is taken from wikipedia 
+1. [Google](https://www.google.org/)
+    -Some recipe descriptions have been taken from material available over the internet
 
 ## Testing
 
@@ -133,7 +129,7 @@ The W3C Markup Validator, W3C CSS Validator and JSHint Services were used to val
 -   A good amount of testing was done to ensure that all pages were linking correctly.
 
 
-**Itinerary Request Form: Testing**
+**New Recipe Form: Testing**
 1.  Go to the "Request an Itinerary" page
 2.  Try to submit the empty form - a prompt message about the required fields appears.
 3.  Try to submit the form with an invalid email address - a prompt message appears.
