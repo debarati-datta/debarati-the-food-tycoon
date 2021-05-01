@@ -24,6 +24,19 @@ nav .brand-logo{
     font-size: 20px;
 }
 
+/*-----------like button----------*/
+.like_btn{
+    padding: 10px 15px;
+    background: #0080ff;
+    font-size: 18px;
+    border-radius: 5px;
+    outline: none;
+    color: white;
+    cursor: pointer;
+
+}
+
+
 /*-----------delete button modal-----------*/
 
 * {box-sizing: border-box;}
