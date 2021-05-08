@@ -66,7 +66,7 @@ Ideally, I would like to add quite a few features to it namely :
 
 1. The option to like/love others recipes and add comments for each recipe. that will truly make it a very interactive website which members would love.
 
-2. The option to add more info about each member so the users can connect with other users more on a one to one basis
+2. The option to add more info about each member so the users can connect with other users more on a one to one basis to exchange ideas on cooking
 
 
 ## Technologies Used
@@ -92,21 +92,21 @@ Ideally, I would like to add quite a few features to it namely :
 1. [Materialize](https://materializecss.com/getting-started.html)
     - Materialise is used to assist with the responsiveness and styling of the website.
 1. [Hover.css:](https://ianlunn.github.io/Hover/)
-    - Hover.css was used on the Social Media icons in the footer to add the float transition while being hovered over.
-1. 1. [jQuery:](https://jquery.com/)
+    - Hover.css was used on various buttons to add the float transition while being hovered over.
+1. [jQuery:](https://jquery.com/)
     - jQuery came with Bootstrap to make the navbar responsive but was also used for the smooth scroll function in JavaScript.
 1. [Git](https://git-scm.com/)
     - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 1. [GitHub:](https://github.com/)
     - GitHub is used to store the projects code after being pushed from Git.
 1. [youtube:](https://www.youtube.com/)
-    -youtube videos of various recipes have been added by users
+    - youtube videos of various recipes have been added by the siteowner and other users
 1. [w3schools:](https://www.w3schools.com/)
-    -w3school tutorial are used to understand and adopt the slideshow and accordion principle and working
+    - w3school tutorial are used to understand various python functions
 1. [stack-overflow:](https://stackoverflow.com/)
-    -Stack Overflow is used to get answers to various whys and hows
+    - Stack Overflow is used to get answers to various whys and hows
 1. [Google](https://www.google.org/)
-    -Some recipe descriptions have been taken from material available over the internet
+    - Some recipe descriptions have been taken from material available over the internet
 
 ## Testing
 
