@@ -113,16 +113,16 @@ Ideally, I would like to add quite a few features to it namely :
 The W3C Markup Validator, W3C CSS Validator and JSHint Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
 -   [W3C Markup Validator](https://validator.w3.org/#validate_by_input) - [Results](https://user-images.githubusercontent.com/66360068/96328537-09987280-103c-11eb-85ce-c8356e3ca49e.png)
--   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://user-images.githubusercontent.com/66360068/96328597-c1c61b00-103c-11eb-9ab5-00adb70eef9c.png)
+-   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results]![image](https://user-images.githubusercontent.com/66360068/118509651-23ac4780-b728-11eb-9c0c-796d992ede79.png)
 -   [JSHint](https://jshint.com) 
-        1. [Result : Accordian](https://user-images.githubusercontent.com/66360068/97306752-ccf82280-1856-11eb-83f1-bba05a3dc531.png)
-        2. [Result : Map](https://user-images.githubusercontent.com/66360068/97307937-362c6580-1858-11eb-8d9c-8d79bfdb75b3.png)
+              1. [Result : App]![image](https://user-images.githubusercontent.com/66360068/118510102-8d2c5600-b728-11eb-8644-1e57d5ad386a.png)
+              2. [Result : Script]![image](https://user-images.githubusercontent.com/66360068/118510351-cbc21080-b728-11eb-8d82-9fde2042c1d0.png)
 
 
 ### Further Testing
 **Browser testing**
 
--   The Website was tested on Google Chrome, Microsoft Edge and Safari browsers.
+-   The Website was tested on Google Chrome, Microsoft Edge and Safari browsers. 5 differnt users registered from a different country and added recipes. They described the experience to be smooth.
 
 **Device testing**
 -   The website was viewed on a variety of devices such as Desktop, Laptop, Samsung Galaxy Note9, iPhone 8 & iPhoneX.
@@ -137,10 +137,10 @@ The W3C Markup Validator, W3C CSS Validator and JSHint Services were used to val
 5.  Try to submit the form with number of children less than 0 - a prompt msg appears.
 6.  The form only accepts dates starting from 01.11.2020 to 31.12.2022. Not that that is too helpful but still keeps the user from picking insane dates and allows the site owner to initiate a dialogue.
 
-**EMail sending Testing**
-*Once the form is submitted correctly, an email is sent to the site owner in a pre-designed template*
--   [Form Submit]![image](https://user-images.githubusercontent.com/66360068/97144344-2f202d00-175c-11eb-979e-b5cc10db1401.png)
--   [EMail Sent]![image](https://user-images.githubusercontent.com/66360068/97144440-5840bd80-175c-11eb-98a0-eb28d2b98af5.png)
+**Backend Mongo DB entry Testing**
+*Each entry directly on Mongo DB collections page can be immediately seen on the site *
+-   [Mongo DB entry]![image](https://user-images.githubusercontent.com/66360068/118511461-d204bc80-b729-11eb-8bce-e0ea55ea8aac.png)
+-   [visibility on site]![image](https://user-images.githubusercontent.com/66360068/118511582-f52f6c00-b729-11eb-8c48-d96b9935d527.png)
 
 
 ## Learnings
