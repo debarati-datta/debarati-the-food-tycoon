@@ -130,12 +130,10 @@ The W3C Markup Validator, W3C CSS Validator and JSHint Services were used to val
 
 
 **New Recipe Form: Testing**
-1.  Go to the "Request an Itinerary" page
+1.  Go to the "New Recipe" page
 2.  Try to submit the empty form - a prompt message about the required fields appears.
-3.  Try to submit the form with an invalid email address - a prompt message appears.
-4.  Try to submit the form with number of adults less than 1 - a prompt msg appears.
-5.  Try to submit the form with number of children less than 0 - a prompt msg appears.
-6.  The form only accepts dates starting from 01.11.2020 to 31.12.2022. Not that that is too helpful but still keeps the user from picking insane dates and allows the site owner to initiate a dialogue.
+3.  Try to submit the form with any empty field - a prompt message appears.
+
 
 **Backend Mongo DB entry Testing**
 *Each entry directly on Mongo DB collections page can be immediately seen on the site *
@@ -145,21 +143,15 @@ The W3C Markup Validator, W3C CSS Validator and JSHint Services were used to val
 
 ## Learnings
 
--   After learning, HTML/CSS, JavaScript felt like a mountain I will not be able to get past. I started working on this project almost simultaneously as 
-    I started learning JavaScript only because I thought any idea that may seem implementable, I must do it straightaway. I made this decision quite early 
-    only because I was finiding JavaScript too tough and was not sure how much I will retain in my head. I feel I made the right choice as by doing this 
-    I never got too overwhelmed as I developed this project very very slowly. It took me days to wrap my head around the simplest of codes like the
-    slideshow! I am pleased that I now at least fully understand the code I have implemented in this project, be it for the accordion or the Email sending. 
-    Map tooks me ages to implement as my infowindows just won't work but when it finally did, it was a Eureka moment indeed!
+-   I enjoyed learning Python and have tried to access other material available on the internet to support my learning. Python is easier to learn as it has clean syntax. Although I have only just studied a web framework but I am quite aware of the numerous third-party modules contained in PyPI that makes Python capable of interacting with many other language platforms. The jinja templating language and the template inheritance that I learnt is immensely helpful to make multi page websites without having to change code on each page constantly. 
 
--   Researching the internet to find the right guidance was something that I learnt and started relying upon heavily during this project. 
+-   I added the defensive programming on my own. When a user hits the delete button, a flash message appears asking the user to confirm deletion. I am quite proud of it. Here is a [screenshot]![image](https://user-images.githubusercontent.com/66360068/118802805-7e65b080-b89a-11eb-80c4-4ff63480aba7.png)
 
--   At the same time, I learnt how much more JavaScript can do and also learnt the limitations of HTML
 
 ## Limitations
 
--   The form validation uses the code institute's formdump which is not ideal. I wanted to use JS code to validatethe form but need to experiment a lot more to be able to do that. Unfortunately in this instance I took the easy route but it is on my agenda to learn form validation from scratch and I have initiated that already. 
--   The Commit messages do not have the same voice throughout. Somewhere along the journey, I started using the 'past participle' and I dont think I can amend them. But based on my mentor's feedback, I changed commit messages to 'simple present' verb first sentences.
+-   The profile Page is not useful at the moment. It can be made better by having a lot of information about the member in terms of their specific food interests, some food hacks that they tried which they want to share, some provision for pictures of their own recipes etc. All of this can make a user profile a lot more interesting and the site more interactive.
+-   
 
 ## Known bugs
 

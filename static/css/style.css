@@ -107,3 +107,32 @@ hr {
      width: 40%;
   }
 }
+
+footer {
+  background-color: #f44336;
+  color: white;
+  min-height: 120px;
+  
+  
+}
+
+.social-links li{
+  margin: 10px;
+}
+
+.social-links li a i {
+  padding: 25px;
+  border-radius: 50%;
+  font-size: 22px;
+  text-align: center;
+  color: #e22525;
+  background: white;
+  transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links a i:hover {
+  background: grey;
+}

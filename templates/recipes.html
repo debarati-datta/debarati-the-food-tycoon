@@ -1,9 +1,9 @@
-  
+
 {% extends "base.html" %}
 {% block content %}
 
     <div class="background-image">
-    <div class="logo"><img src="static/images/food_banner_22.jpg" alt="logo" style="width:100%"></div>
+    <div class="logo"><img src="/static/images/food_banner_22.jpg" alt="logo" style="width:100%"></div>
     </div>
     <h4>
         This a platform for sharing the most common indian household recipes, eaten on an everyday basis in different parts of the country. The website currently offers 30 recipes of various indian curries from 6 different states of India and allows users to add new recipes to the platform. The recipes are displayed with the user's initials and allows amends. 
@@ -68,8 +68,9 @@
                     <div class="card-content">
                         <strong>{{ recipe.ingredients }}</strong>
                         <p>{{ recipe.recipe_description }}</p>
+                        <br>
                         <a href="{{ recipe.video }}" target="_blank">Watch it here : {{ recipe.video }}</a>
-            
+                        <br>            
                         <p><em>by: {{ recipe.created_by }}</em></p>
                     </div>
                 </div>
@@ -93,4 +94,4 @@
                 }
             }
         </script>
-    {% endblock %}
+{% endblock %}
