@@ -112,13 +112,16 @@ hr {
 footer {
   background-color: #f44336;
   color: white;
-  min-height: 120px;
-  
-  
+  min-height: 120px;   
+}
+
+.social-links{
+  text-align: center;
 }
 
 .social-links li{
   margin: 10px;
+  display: inline;
 }
 
 .social-links li a i {

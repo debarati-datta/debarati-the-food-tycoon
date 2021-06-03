@@ -112,7 +112,7 @@ Ideally, I would like to add quite a few features to it namely :
 
 The W3C Markup Validator, W3C CSS Validator and JSHint Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
--   [W3C Markup Validator](https://validator.w3.org/#validate_by_input) - [Results](https://user-images.githubusercontent.com/66360068/96328537-09987280-103c-11eb-85ce-c8356e3ca49e.png)
+-   [W3C Markup Validator](https://validator.w3.org/#validate_by_input) - Throws up errors due to usage of jinja templating language which is expected
 -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results]![image](https://user-images.githubusercontent.com/66360068/118509651-23ac4780-b728-11eb-9c0c-796d992ede79.png)
 -   [JSHint](https://jshint.com) 
               1. [Result : App]![image](https://user-images.githubusercontent.com/66360068/118510102-8d2c5600-b728-11eb-8644-1e57d5ad386a.png)
@@ -159,9 +159,9 @@ The W3C Markup Validator, W3C CSS Validator and JSHint Services were used to val
 
 ## Deployment
 
-### GitHub Pages
+### Heroku
 
-**The project was deployed to GitHub Pages using the following steps**
+**The project was deployed to Heroku using the following steps**
 
 1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
 2. At the top of the Repository (not top of page), locate the "Settings" button on the menu.
@@ -171,13 +171,8 @@ The W3C Markup Validator, W3C CSS Validator and JSHint Services were used to val
 5. The page will automatically refresh.
 6. Scroll back down through the page to locate the now published [site link](https://debarati-datta.github.io/debarati-the-food-tycoon/) in the "GitHub Pages" section.
 
-**The project was made into a template repository using the following steps**
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
-2. At the top of the Repository (not top of page), locate the "Settings" button on the menu.
-3. Tick the box underneath repository name titled 'Template Repository'.
-
-**Issues tab was used to generate screenshot links to use in the ReadMe file**
+**Issues tab on github was used to generate screenshot links to use in the ReadMe file**
 
 1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
 2. At the top of the Repository (not top of page), locate the "Issues" button next to "Code" button on the menu.
@@ -189,34 +184,18 @@ The W3C Markup Validator, W3C CSS Validator and JSHint Services were used to val
 ## Sources
 ### This project is inspired by 
 
-- The whiskey drop project(Code Institute) - The callout section and the itinerary request 
-- The Resume project(Code Institute)- The navbar design
-- [Bootstrap4](https://getbootstrap.com/docs/4.4/getting-started/introduction/): Bootstrap Library used throughout the project mainly to make site responsive using the Bootstrap Grid System.
-- The font 'Lato' used was inspired by the Love Running Project (Code Institute).
-
-### Credits (google tutorials used)
-
-1.  [Flexbox](https://www.youtube.com/watch?v=kDumlq8bL7Y&t=625s)
-2.  [Google map multiple infowindow](https://www.youtube.com/watch?v=Xptz0GQ2DO4&t=737s)
-3.  [Google API key infowindow infopicker](https://www.youtube.com/watch?v=W2IygSl-R88)
+- The task manager mini project(Code Institute) - The entire design and pages
 
 
 ### Content
 
--   Remaining content was written by the developer.
+-   Remaining content(recipes) is written by the developer and other users of the app.
 
 ### Media
 
--   All Images were obtained from the internet and renamed.
+-   The hero Image is obtained from the internet and renamed.
 
 ### Acknowledgements
 
--   I thanks my Mentor for continuous helpful feedback. Its my mentor's challenges that I try to live upto. He pointed out in our first project
-    meeting that I was still operating in my HTML/CSS cocoon and that helped me explore a lot more.
-
--   I thank Tutor support especially Miklos who helped me understand the slideshow code via a screen share session. That session helped me in 
-    many ways as I started to keenly follow what the code does in a step by step manner. He helped me use the debugger and also just
-    taught me the general approach to JavaScript coding. 
-
-- I thanks the slack community as a lot of whys get answered there. Especialy Eventyret_mentor, Eamonn_lead and Mr Bim_alumni who helped me on a number of occassions.
+-   I thanks my Mentor, tutor support and slack community for continuous helpful feedback. 
 
