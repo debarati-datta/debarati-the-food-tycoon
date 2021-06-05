@@ -90,7 +90,23 @@ def profile(username):
         return render_template("profile.html", username=username)
 
     return redirect(url_for("login"))
-    
+
+  
+@app.route("/add_profile", methods=["GET", "POST"])
+def add_profile():
+    if request.method == "POST":
+        user = {
+            "First_Name": request.form.get("First_Name"),
+            "Last_Name": request.form.get("Last_Name"),
+            "E_mail": request.form.get("E_Mail"),
+            }
+        mongo.db.users.insert_one(user)
+        session["user"] = request.form.get("username").lower()
+        flash("Details added sucessfully")
+        return redirect(url_for("profile", username=session["user"]))
+
+    return render_template("profile.html")
+
 
 @app.route("/logout")
 def logout():
