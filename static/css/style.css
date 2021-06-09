@@ -110,9 +110,14 @@ hr {
 }
 
 footer {
-  background-color: #f44336;
+  background-color: rgb(100, 100, 131);
   color: white;
   min-height: 120px;   
+}
+
+.general-sub{
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
 }
 
 .social-links{
@@ -129,7 +134,7 @@ footer {
   border-radius: 50%;
   font-size: 22px;
   text-align: center;
-  color: #e22525;
+  color: yellowgreen;
   background: white;
   transition: all 0.35s ease-in-out;
   -moz-transition: all 0.35s ease-in-out;

@@ -5,9 +5,9 @@
     <div class="background-image">
     <div class="logo"><img src="/static/images/food_banner_22.jpg" alt="logo" style="width:100%"></div>
     </div>
-    <h4>
+    <h5>
         This a platform for sharing the most common indian household recipes, eaten on an everyday basis in different parts of the country. The website currently offers 30 recipes of various indian curries from 6 different states of India and allows users to add new recipes to the platform. The recipes are displayed with the user's initials and allows amends. 
-    </h4>
+    </h5>
 
     <h3 class="light-blue-text text-darken-4 center-align">All Recipes</h3>
 
@@ -36,7 +36,7 @@
         <div class="col s12 m12">
             {% if session.user|lower == recipe.created_by|lower %}
             
-            <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="btn-small blue-grey accent-4">Edit</a>
+            <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="btn-small blue-grey lighten-1">Edit</a>
 
             <button onclick="document.getElementById('recipe_id').style.display='block'" class="btn-small red accent-4">Delete</button>
                         

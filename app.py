@@ -42,7 +42,10 @@ def register():
 
         register = {
             "username": request.form.get("username").lower(),
-            "password": generate_password_hash(request.form.get("password"))
+            "password": generate_password_hash(request.form.get("password")),
+            "firstname": request.form.get("firstname"),
+            "lastname": request.form.get("lastname"),
+            "email": request.form.get("email")
         }
         mongo.db.users.insert_one(register)
 
@@ -84,30 +87,14 @@ def login():
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
     # grab the session user's username from db
-    username = mongo.db.users.find_one({"username": session["user"]})["username"]
-
+    username = mongo.db.users.find_one({"username": session['user']})["username"]
+   
     if session['user']:
         return render_template("profile.html", username=username)
 
     return redirect(url_for("login"))
 
-  
-@app.route("/add_profile", methods=["GET", "POST"])
-def add_profile():
-    if request.method == "POST":
-        user = {
-            "First_Name": request.form.get("First_Name"),
-            "Last_Name": request.form.get("Last_Name"),
-            "E_mail": request.form.get("E_Mail"),
-            }
-        mongo.db.users.insert_one(user)
-        session["user"] = request.form.get("username").lower()
-        flash("Details added sucessfully")
-        return redirect(url_for("profile", username=session["user"]))
-
-    return render_template("profile.html")
-
-
+ 
 @app.route("/logout")
 def logout():
     # remove user from session cookies
