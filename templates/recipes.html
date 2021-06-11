@@ -1,97 +1,102 @@
-
 {% extends "base.html" %}
 {% block content %}
 
-    <div class="background-image">
+<div class="background-image">
     <div class="logo"><img src="/static/images/food_banner_22.jpg" alt="logo" style="width:100%"></div>
-    </div>
-    <h5>
-        This a platform for sharing the most common indian household recipes, eaten on an everyday basis in different parts of the country. The website currently offers 30 recipes of various indian curries from 6 different states of India and allows users to add new recipes to the platform. The recipes are displayed with the user's initials and allows amends. 
-    </h5>
+</div>
+<h5>
+    This a platform for sharing the most common indian household recipes, eaten on an everyday basis in different parts
+    of the country. The website currently offers 14 recipes of various indian curries from 6 different states of India
+    and allows users to add new recipes to the platform. The recipes are displayed with the user's initials and allows
+    amends.
+</h5>
 
-    <h3 class="light-blue-text text-darken-4 center-align">All Recipes</h3>
+<h3 class="light-blue-text text-darken-4 center-align">All Recipes</h3>
 
-    <div class="row card-panel grey lighten-5">
-        <form action="{{ url_for('search') }}" method="post" class="col s12">
-            <div class="row valign-wrapper center-align">
-                <div class="input-field col s12 m8">
-                    <i class="fas fa-search prefix light-blue-text text-darken-4"></i>
-                    <input type="text" name="query" id="query" minlength="3" class="validate" required>
-                    <label for="query">Search Recipes</label>
-                </div>
-                <div class="col s12 m4">
-                    <a href="{{ url_for('get_recipes') }}" class="red btn text-shadow">Reset</a>
-                    <button type="submit" class="light-grey darken-4 btn text-shadow">
-                        <i class="fas fa-search left"></i> Search
-                    </button>
-                </div>
+<div class="row card-panel grey lighten-5">
+    <form action="{{ url_for('search') }}" method="post" class="col s12">
+        <div class="row valign-wrapper center-align">
+            <div class="input-field col s12 m8">
+                <i class="fas fa-search prefix light-blue-text text-darken-4"></i>
+                <input type="text" name="query" id="query" minlength="3" class="validate" required>
+                <label for="query">Search Recipes</label>
             </div>
-        </form>
-    </div>
+            <div class="col s12 m4">
+                <a href="{{ url_for('get_recipes') }}" class="red btn text-shadow">Reset</a>
+                <button type="submit" class="light-grey darken-4 btn text-shadow">
+                    <i class="fas fa-search left"></i> Search
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
 
-    {% if recipes|length > 0 %}
-    <div class="row">
-        
-        {% for recipe in recipes %}
-        <div class="col s12 m12">
-            {% if session.user|lower == recipe.created_by|lower %}
-            
-            <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="btn-small blue-grey lighten-1">Edit</a>
+{% if recipes|length > 0 %}
+<div class="row">
 
-            <button onclick="document.getElementById('recipe_id').style.display='block'" class="btn-small red accent-4">Delete</button>
-                        
-            <div id="recipe_id" class="modal">
-                <span onclick="document.getElementById('recipe_id').style.display='none'" class="close"
-                    title="Close Modal">×</span>
-                <form class="modal-content" action="/action_page.php">
-                    <div class="container">
-                        <p>Are you sure you want to delete this recipe?</p>
-                        <div class="clearfix">
-                            <button type="button" onclick="document.getElementById('recipe_id').style.display='none'" class="cancelbtn">Cancel
-                            </button>
-                
-                            <button type="button" onclick="document.getElementById('recipe_id').style.display='none'" class="deletebtn">
+    {% for recipe in recipes %}
+    <div class="col s12 m12">
+        {% if session.user|lower == recipe.created_by|lower %}
+
+        <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="btn-small blue-grey lighten-1">Edit</a>
+
+        <button onclick="document.getElementById('recipe_id').style.display='block'"
+            class="btn-small red accent-4">Delete</button>
+
+        <div id="recipe_id" class="modal">
+            <span onclick="document.getElementById('recipe_id').style.display='none'" class="close"
+                title="Close Modal">×</span>
+            <form class="modal-content" action="/action_page.php">
+                <div class="container">
+                    <p>Are you sure you want to delete this recipe?</p>
+                    <div class="clearfix">
+                        <button type="button" onclick="document.getElementById('recipe_id').style.display='none'"
+                            class="cancelbtn">Cancel
+                        </button>
+
+                        <button type="button" onclick="document.getElementById('recipe_id').style.display='none'"
+                            class="deletebtn">
                             <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}">OK</a>
-                            </button>   
-                        </div>
+                        </button>
                     </div>
-                </form>
-                        
-                {% endif %}
-            </div>
+                </div>
+            </form>
+
+            {% endif %}
         </div>
-        <div class="col s12 m12">
-            <div class="card blue-grey darken-1">
-                <div class="card-content white-text">
-                    <span class="card-title"><strong>{{ recipe.catagory_name }}</strong> : {{ recipe.recipe_name }}</span>
-                 
-                    <div class="card-content">
-                        <p>Ingredients : {{ recipe.ingredients }}</p>
-                        <br>
-                        <p>Recipe : {{ recipe.recipe_description }}</p>
-                        <br>
-                        <a href="{{ recipe.video }}" target="_blank">Watch it here : {{ recipe.video }}</a>
-                        <p><em>by: {{ recipe.created_by }}</em></p>
-                    </div>
+    </div>
+    <div class="col s12 m12">
+        <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+                <span class="card-title"><strong>{{ recipe.catagory_name }}</strong> : {{ recipe.recipe_name }}</span>
+
+                <div class="card-content">
+                    <p>Ingredients : {{ recipe.ingredients }}</p>
+                    <br>
+                    <p>Recipe : {{ recipe.recipe_description }}</p>
+                    <br>
+                    <a href="{{ recipe.video }}" target="_blank">Watch it here : {{ recipe.video }}</a>
+                    <p><em>by: {{ recipe.created_by }}</em></p>
                 </div>
             </div>
         </div>
-        </div>
-        
-        {% endfor %}
-        {% else %}
-            <h3 class="red-text text-darken-4 center-align">No Results Found</h3>
-        {% endif %}
+    </div>
+</div>
 
-        <script>
-            // Get the modal
-            var modal = document.getElementById('recipe_id');
+{% endfor %}
+{% else %}
+<h3 class="red-text text-darken-4 center-align">No Results Found</h3>
+{% endif %}
 
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function (event) {
-                if (event.target == modal) {
-                    modal.style.display = "none";
-                }
-            }
-        </script>
+<script>
+    // Get the modal
+    var modal = document.getElementById('recipe_id');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
 {% endblock %}

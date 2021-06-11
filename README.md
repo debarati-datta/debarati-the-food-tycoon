@@ -153,23 +153,18 @@ The W3C Markup Validator, W3C CSS Validator and JSHint Services were used to val
 -   The profile Page is not useful at the moment. It can be made better by having a lot of information about the member in terms of their specific food interests, some food hacks that they tried which they want to share, some provision for pictures of their own recipes etc. All of this can make a user profile a lot more interesting and the site more interactive.
 -   
 
-## Known bugs
-
--   While inspecting, sometimes, the accordion content starts to overlap and top content hides behind the bottom content as you keep dragging the screen inwards making it smaller but when you reload the page, its all fine again. Could not figure why that would happen.
-
 ## Deployment
 
 ### Heroku
 
 **The project was deployed to Heroku using the following steps**
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
-2. At the top of the Repository (not top of page), locate the "Settings" button on the menu.
-    - Alternatively Click [Here](https://raw.githubusercontent.com/) for a GIF demonstrating the process starting from Step 2.
-3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
-4. Under "Source", click the dropdown called "None" and select "Master Branch" and save.
-5. The page will automatically refresh.
-6. Scroll back down through the page to locate the now published [site link](https://debarati-datta.github.io/debarati-the-food-tycoon/) in the "GitHub Pages" section.
+1. Download Heroku. Register and create an account. 
+2. Under personal tab, create a new app and give it the same name as your project on github. ![image](https://user-images.githubusercontent.com/66360068/121634560-af419b80-ca7c-11eb-9198-75dd66060cbc.png)
+3. Under settings tab, reveal the config vars and add those to your project's env.py file and choose the app owner by providing your email id.![image](https://user-images.githubusercontent.com/66360068/121634690-f16add00-ca7c-11eb-85dc-26111a5f4dd8.png)
+4. Under the delopy tab, connect to github and enable automatic deploys. Choose the master branch to deploy. ![image](https://user-images.githubusercontent.com/66360068/121634839-2f680100-ca7d-11eb-9cf9-904e51014e1f.png)
+5. Wait for it to connect while the final url is being created. Find the link under settings tab. ![image](https://user-images.githubusercontent.com/66360068/121635190-ba48fb80-ca7d-11eb-8534-7935ebc56ac6.png)
+6. Click the final link to see your app running.
 
 
 **Issues tab on github was used to generate screenshot links to use in the ReadMe file**
